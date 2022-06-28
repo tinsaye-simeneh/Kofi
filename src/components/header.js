@@ -12,7 +12,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-import useStyles from "../style/style";
+import useStyles from "../style/Style";
 import logo from "../assets/images/logo.png";
 
 const Header = () => {
