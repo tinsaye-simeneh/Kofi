@@ -5,13 +5,14 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
+import { Link } from "@mui/material";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-import useStyles from "../style";
+import useStyles from "../style/style";
 import logo from "../assets/images/logo.png";
 
 const Header = () => {
@@ -37,28 +38,41 @@ const Header = () => {
             </Box>
 
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-              <Button
-                sx={{ my: 2, mx: 2, color: "white", display: "block" }}
+              <Link
+                component="button"
+                variant="body2"
+                onClick='/Home'
+                underline="none"
+                sx={{ my: 2, mx: 5, color: "white", display: "block" }}
               >
                 Home
-              </Button>
-              <Button
+              </Link>
+              
+              <Link
+                component="button"
+                variant="body2"
+                onClick='/about'
+                underline="none"
                 sx={{ my: 2, mx: 2, color: "white", display: "block" }}
               >
                 About Us
-              </Button>
-              <Button
+              </Link>
+              <Link
+                component="button"
+                variant="body2"
+                onClick='/contact'
+                underline="none"
                 sx={{ my: 2, mx: 2, color: "white", display: "block" }}
               >
                 Contact Us
-              </Button>
+              </Link>
             </Box>
 
             <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
               <Button
                 variant="contained"
                 href="/supplier"
-                style={{
+                sx={{
                   backgroundColor: "white",
                   color: "#103037",
                   border: "none",
