@@ -1,8 +1,8 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import AboutSide from "../../assets/images/aboutSide.png";
-import PageContainer from "./PageContainer";
-import AboutTxt from "./AboutTxt";
+import PageContainer from "../PageContainer";
+import AboutTxt from "../AboutTxt";
 
 const About = () => {
   return (
