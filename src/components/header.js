@@ -12,11 +12,9 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-import useStyles from "../style/Style";
 import logo from "../assets/images/logo.png";
 
 const Header = () => {
-  const classes = useStyles();
 
   const [anchorElNav, setAnchorElNav] = useState(null);
 
@@ -30,8 +28,8 @@ const Header = () => {
 
   return (
     <>
-      <AppBar position="static">
-        <Container maxWidth="xl" className={classes.Container_bg}>
+      <AppBar position="static" sx={{backgroundColor: "#103037"}}>
+        <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
               <img src={logo} alt="logo" />
