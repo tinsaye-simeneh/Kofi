@@ -21,7 +21,8 @@ function Footer() {
           m={{ sm: 1, md: 2 }}
           p={{ sm: 1, md: 2 }}
         >
-          <Container maxWidth="lg">
+          <Container maxWidth="lg" sx={{ mt: 5 }}>
+            <hr/>
             <Grid container spacing={10} justify="center">
               <Grid item md={4} sm={12} xs={12}>
                 <Box
@@ -44,7 +45,7 @@ function Footer() {
                   </Box>
                 </Typography>
               </Grid>
-              <Grid item md={3} sm={12} xs={12}>
+              <Grid item md={4} sm={12} xs={12}>
                 <Box
                   mb={{ sm: 3 }}
                   justifyContent="center"
@@ -67,7 +68,7 @@ function Footer() {
                 </Typography>
               </Grid>
 
-              <Grid item md={3} xs={12} alignItems="center">
+              <Grid item md={4} xs={12} alignItems="center">
                 <Box
                   mb={{ sm: 3 }}
                   justifyContent="center"
@@ -98,21 +99,7 @@ function Footer() {
                     </Box>
                   </Link>
                 </Box>
-              </Grid>
-
-              <Grid item md={2} sm={12} xs={12} sx={{mt:2}}>
-              <Box
-                  mb={{ sm: 3 }}
-                  justifyContent="center"
-                  alignItems="center"
-                  display={"flex"}
-                >
-                  <Typography>
-                    @2022 kofi. All right Reserved.</Typography>{" "}
-                    </Box>
-              </Grid>
-
-             
+              </Grid>             
              
             </Grid>
           </Container>
