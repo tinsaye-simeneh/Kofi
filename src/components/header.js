@@ -9,10 +9,10 @@ import { Link } from "@mui/material";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
 import logo from "../assets/images/logo.png";
+import SupplierPlatform from './modals/SupplierPlatform'
 
 const Header = () => {
 
@@ -39,7 +39,6 @@ const Header = () => {
               <Link
                 component="button"
                 variant="body2"
-                onClick='/Home'
                 underline="none"
                 sx={{ my: 2, mx: 5, color: "white", display: "block" }}
               >
@@ -49,7 +48,6 @@ const Header = () => {
               <Link
                 component="button"
                 variant="body2"
-                onClick='/about'
                 underline="none"
                 sx={{ my: 2, mx: 2, color: "white", display: "block" }}
               >
@@ -58,26 +56,16 @@ const Header = () => {
               <Link
                 component="button"
                 variant="body2"
-                onClick='/contact'
+            
                 underline="none"
-                sx={{ my: 2, mx: 2, color: "white", display: "block" }}
+                sx={{my: 2, mx: 2, color: "white", display: "block" }}
               >
                 Contact Us
               </Link>
             </Box>
 
             <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
-              <Button
-                variant="contained"
-                href="/supplier"
-                sx={{
-                  backgroundColor: "white",
-                  color: "#103037",
-                  border: "none",
-                }}
-              >
-                Supplier Platform
-              </Button>
+              <SupplierPlatform/>
             </Box>
 
             {/* small size */}
@@ -115,20 +103,20 @@ const Header = () => {
                   display: { xs: "block", md: "none" },
                 }}
               >
-                <MenuItem onClick={"/Home"}>
+                <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">Home</Typography>
                 </MenuItem>
 
-                <MenuItem onClick={"/about"}>
+                <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">About Us</Typography>
                 </MenuItem>
 
-                <MenuItem onClick={"/contact"}>
+                <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">Contact Us</Typography>
                 </MenuItem>
 
-                <MenuItem onClick={"/supplier"}>
-                  <Typography textAlign="center">Supplier platform</Typography>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <SupplierPlatform/>
                 </MenuItem>
               </Menu>
             </Box>

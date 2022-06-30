@@ -1,6 +1,6 @@
 import React from "react";
 import coffeeImg from "../assets/images/thumb.jpg";
-import OrderModal from './OrderModal'
+import OrderModal from './modals/OrderModal'
 import { Container, Box, Grid, Button } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -12,7 +12,7 @@ function coffeeCard({ data }) {
   return (
     <>
       <Card
-        sx={{ maxWidth: 345, m: 2 }}
+        sx={{m: 2 }}
         alignItems="center"
         justifyContent="center"
         display={{ xs: "none", lg: "flex" }}
@@ -37,8 +37,9 @@ function coffeeCard({ data }) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-         <OrderModal coffeeData={data}/>
+         <OrderModal  cofData={data}/>
         </CardActions>
+        
       </Card>
     </>
   );

@@ -11,7 +11,7 @@ export default function Kofi(){
     <>
     <div style={{background:'#103037'}}>
     <Header/>
-    <Home/>
+      <Home/>
     <Footer/>
     </div>
     </>
