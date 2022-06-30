@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import { Typography, FormControl, Input, MenuItem, Select, InputLabel } from "@mui/material";
 import Button from "@mui/material/Button";
-import coffeeCard from "../CoffeeCard";
 
 export default function SupplierPlatform({ setCoffee, coffee}) {
   const [cfName, setcfName] = useState("");
