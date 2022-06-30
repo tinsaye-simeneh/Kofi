@@ -1,8 +1,24 @@
-import React from "react";
+import React, {useState} from "react";
 import CarouselImg from "../../assets/images/carousel.jpg";
+import CoffeeCard from "../CoffeeCard";
 import { Container, Box, Grid, Button } from "@mui/material";
-
+const coffeeData = [{
+    name: 'hulu coffee',
+    price: 45,
+    category: 'coffee',
+    telegram: 'no',
+    phone: '60',
+}]
 function Home() {
+    const [coffee, setCoffee] = useState(coffeeData)
+    const submitHandler = (d) => {
+        setCoffee([...coffee, d])
+    }
+
+    const categoryHandler = () =>{
+
+    }
+
   return (
     <>
       <Container maxWidth="lg" sx={{ mt: 5 }}>
@@ -70,6 +86,12 @@ function Home() {
               </Button>
             </Box>
           </Grid>
+        {coffee?.map(cof => {
+            return ( <Grid item md={3}>
+                <CoffeeCard data={cof}/>
+              </Grid>)
+        })}
+         
         </Grid>
       </Container>
     </>
