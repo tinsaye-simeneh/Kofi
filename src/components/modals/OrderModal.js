@@ -27,7 +27,6 @@ export default function OrderModal({ cofData }) {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "white",
         }}
       >
         <Box sx={{ p: 5, backgroundColor: "white", textAlign: "center" }}>
