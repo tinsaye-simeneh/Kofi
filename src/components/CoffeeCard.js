@@ -1,7 +1,6 @@
 import React from "react";
 import coffeeImg from "../assets/images/thumb.jpg";
 import OrderModal from './modals/OrderModal'
-import { Container, Box, Grid, Button } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";

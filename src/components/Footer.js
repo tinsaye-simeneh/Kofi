@@ -7,7 +7,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-import useStyles from "../style/style";
+import useStyles from "../style/Style";
 
 function Footer() {
   const classes = useStyles();
