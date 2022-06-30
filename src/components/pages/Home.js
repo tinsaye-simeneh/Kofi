@@ -38,7 +38,7 @@ export default function Home({ coffee }) {
   };
   useEffect(() => {
     filterData(catState);
-  }, [coffee]);
+  });
 
   return (
     <>
@@ -64,7 +64,7 @@ export default function Home({ coffee }) {
             >
               Popular Categories
             </Typography>
-            {isChecked == false?
+            {isChecked === false?
             <Link
                 display={{ xs: "inline", lg: "none" }}
                 onClick={() => setIsChecked(!isChecked)}
