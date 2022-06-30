@@ -124,7 +124,7 @@ export default function Home({ coffee }) {
                       variant="contained"
                       fullWidth
                       sx={{ my: 1, backgroundColor: "#3f50b5" }}
-                      onClick={() => filterData(cat)}
+                      onClick={() => {filterData(cat); setIsChecked(false)}}
                     >
                       {cat}
                     </Button>
@@ -133,7 +133,7 @@ export default function Home({ coffee }) {
                       variant="contained"
                       fullWidth
                       sx={{ my: 1, backgroundColor: "#103037" }}
-                      onClick={() => filterData(cat)}
+                      onClick={() => {filterData(cat); setIsChecked(false)}}
                     >
                       {cat}
                     </Button>
