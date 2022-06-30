@@ -7,7 +7,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-import useStyles from "../style/Style";
+import useStyles from "../style/style";
 
 function Footer() {
   const classes = useStyles();
@@ -36,7 +36,7 @@ function Footer() {
                   </Typography>{" "}
                 </Box>
                 <Typography variant="body2" align="center">
-                  <Box mb={{ sm: 1 }}>Book mall #432, Addis Ababa</Box>
+                  <Box mb={{ sm: 1 }}>Kofimall #123, Addis Ababa</Box>
                   <Box mb={{ sm: 1 }}>+2519-000-000-00</Box>
                   <Box>
                     <Link href="mailto:kofisupport@gmail.com" underline='none'color="inherit">

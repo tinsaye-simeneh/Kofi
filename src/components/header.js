@@ -14,7 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import logo from "../assets/images/logo.png";
 import SupplierPlatform from './modals/SupplierPlatform'
 
-const Header = () => {
+const Header = ({setCoffee, coffee}) => {
 
   const [anchorElNav, setAnchorElNav] = useState(null);
 
@@ -31,32 +31,33 @@ const Header = () => {
       <AppBar position="static" sx={{backgroundColor: "#103037"}}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
+            <Link href='/'>
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
               <img src={logo} alt="logo" />
             </Box>
+            </Link>
 
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               <Link
-                component="button"
                 variant="body2"
                 underline="none"
+                href='/'
                 sx={{ my: 2, mx: 5, color: "white", display: "block" }}
               >
                 Home
               </Link>
               
               <Link
-                component="button"
                 variant="body2"
                 underline="none"
+                href='/about'
                 sx={{ my: 2, mx: 2, color: "white", display: "block" }}
               >
                 About Us
               </Link>
               <Link
-                component="button"
                 variant="body2"
-            
+                href='/contact'
                 underline="none"
                 sx={{my: 2, mx: 2, color: "white", display: "block" }}
               >
@@ -65,13 +66,16 @@ const Header = () => {
             </Box>
 
             <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
-              <SupplierPlatform/>
+              <SupplierPlatform setCoffee={setCoffee} coffee={coffee} />
             </Box>
 
             {/* small size */}
 
+           
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <Link href='/'>
               <img src={logo} alt="logo" />
+            </Link>
             </Box>
 
             <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "none" } }}>
@@ -104,19 +108,19 @@ const Header = () => {
                 }}
               >
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Home</Typography>
+                  <Link textAlign="center" href="/" sx={{color:'#103037', textDecoration:'none'}}>Home</Link>
                 </MenuItem>
 
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">About Us</Typography>
+                  <Link textAlign="center" href="/about" sx={{color:'#103037', textDecoration:'none'}}>About Us</Link>
                 </MenuItem>
 
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Contact Us</Typography>
+                  <Link textAlign="center" href="/contact" sx={{color:'#103037', textDecoration:'none'}}>Contact Us</Link>
                 </MenuItem>
 
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <SupplierPlatform/>
+                  <SupplierPlatform setCoffee={setCoffee} coffee={coffee} />
                 </MenuItem>
               </Menu>
             </Box>

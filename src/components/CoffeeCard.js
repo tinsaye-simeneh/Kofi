@@ -26,10 +26,10 @@ function coffeeCard({ data }) {
           />
           <CardContent>
             <Typography variant="body2" color="text.secondary">
-              #{data.category}
+              {data.name}
             </Typography>
             <Typography gutterBottom variant="h5" component="div">
-              {data.name}
+              {data.category}
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Price:{data.price}

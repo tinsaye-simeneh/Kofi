@@ -34,7 +34,7 @@ export default function OrderModal({ cofData }) {
           <Typography sx={{mb:2, textDecoration: "underline" }}>
             Order Details
           </Typography>
-          <Typography>Coffee Name: {cofData.name}</Typography>
+          <Typography>Name: {cofData.name}</Typography>
           <Typography>Coffee Price: {cofData.price}</Typography>
           <Typography>Coffee Category: {cofData.category}</Typography>
 
