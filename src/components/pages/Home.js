@@ -44,10 +44,10 @@ export default function Home({ coffee }) {
     <>
       <Container maxWidth="lg" sx={{ mt: 5 }}>
         <Grid container spacing={0} justify="center">
-          <Grid item md={12} sx={{ backgroundColor: "yellow" }}>
+          <Grid item md={12} sx={{ backgroundColor: "white" }}>
             <Box alignItems="center" display={{ xs: "none", lg: "flex" }}>
-              <img src={CarouselImg} alt="yes" height={300} width="50%" />
-              <img src={CarouselImg} alt="yes" height={300} width="50%" />
+              <img src={CarouselImg} alt="carousel" height={300} width="50%" />
+              <img src={CarouselImg} alt="carousel" height={300} width="50%" />
             </Box>
           </Grid>
 
