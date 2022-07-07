@@ -1,1 +1,1 @@
-This project is created for alx frontend specilazation graduation project.
+This project is created for alx frontend specialization graduation project.
